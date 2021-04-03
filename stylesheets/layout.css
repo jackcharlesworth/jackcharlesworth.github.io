@@ -1,0 +1,295 @@
+body {
+  background: #FAFAFA;
+  font: 18px/25px "Computer Modern Serif", "Georgia", "Times New Roman", serif;
+  margin: 40px 16% 40px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 50px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+
+section p {
+  text-align: justify;
+  -ms-text-justify: newspaper;
+}
+
+.button-link {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.button-link::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.edu-item,
+.edu-institution,
+.project-item {
+  display: block;
+}
+
+hr {
+  margin: 0 0 20px 0;
+  border-style: dashed;
+  border-color: #444;
+}
+
+.overview .detail {
+  margin-bottom: 10px;
+}
+
+.overview .detail:last-child {
+  margin-bottom: 20px;
+}
+
+.skills {
+  text-align: left;
+}
+
+.skills .tag {
+  display: inline-block;
+  padding: 2px 7px;
+  margin-bottom: 4px;
+  border: 1px solid #222;
+  border-radius: 4px;
+}
+
+.em-link,
+.em-link:visited {
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+}
+
+.em-link:hover,
+.em-link:focus {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.header-link {
+  display: none;
+  font-size: 19px;
+  font-weight: 400;
+  vertical-align: bottom;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.section-header:hover > .header-link {
+  display: inline;
+}
+
+.gotop-button,
+.print-button {
+  position: fixed;
+  text-shadow: 0 0 5px white;
+}
+
+.gotop-button {
+  right: 40px;
+  bottom: 40px;
+}
+
+.print-button {
+  display: none;
+  left: 40px;
+  top: 40px;
+}
+
+@media
+  /* ----------- Non-Retina Screens ----------- */
+  screen 
+  and (min-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1)
+,
+  /* ----------- Retina Screens ----------- */
+  screen 
+  and (min-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi)
+{
+  .print-button {
+    display: block;
+  }
+}
+
+.cat {
+  text-align: right;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body {
+    margin: 30px 0;
+  }
+
+  h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  h2,
+  p,
+  ul {
+    margin-bottom: 10px !important;
+  }
+
+  .cat {
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .gotop-button {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  body {
+    margin: 20px 0 10px 0;
+  }
+
+  section {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  h2,
+  p,
+  ul {
+    margin-bottom: 10px !important;
+  }
+
+  .cat {
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .gotop-button {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 319px) {
+  body {
+    margin: 10px 0;
+  }
+
+  h4 {
+    font-size: 17px;
+  }
+
+  .cat, nav {
+    font-size: 14px;
+  }
+
+  .gotop-button {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+    margin: 0;
+    padding: 0 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6, ul, ol, img {
+    page-break-after: avoid;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ") ";
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .em-link,
+  .em-link:visited,
+  .em-link:hover,
+  .em-link:focus {
+    border: 0;
+  }
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("../fonts/cmu_serif_roman.eot");
+  src: url("../fonts/cmu_serif_roman.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/cmu_serif_roman.woff") format("woff"),
+    url("../fonts/cmu_serif_roman.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("../fonts/cmu_serif_italic.eot");
+  src: url("../fonts/cmu_serif_italic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/cmu_serif_italic.woff") format("woff"),
+    url("../fonts/cmu_serif_italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("../fonts/cmu_serif_bold_italic.eot");
+  src: url("../fonts/cmu_serif_bold_italic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/cmu_serif_bold_italic.woff") format("woff"),
+    url("../fonts/cmu_serif_bold_italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("../fonts/cmu_serif_bold.eot");
+  src: url("../fonts/cmu_serif_bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/cmu_serif_bold.woff") format("woff"),
+    url("../fonts/cmu_serif_bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
